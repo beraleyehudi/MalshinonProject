@@ -8,16 +8,17 @@ namespace Malshinon
 {
     public class Agent
     {
+        
         public int Id { get; set; }
         public string FullName { get; set; }
 
-        public int NumberOfReports { get; set; }
+        public int NumberOfReports { get; set; } = 0;
 
-        public Agent(string fullName, int numberOfReports)
+        public Agent(string fullName)
         {
-     
+
             FullName = fullName;
-            NumberOfReports = numberOfReports;
+            //MalshinonDAL.AddAgent(this);
         }
     }
 }
