@@ -15,16 +15,9 @@ namespace Malshinon
         public int IdAgent { get; set; }
         public int IdTarget { get; set; }
         public string Text { get; set; }
-        public DateTime TimeStamp { get; set; }
+        public DateTime TimeStamp { get; set; } = DateTime.Now;
 
-        //public Report(int idAgent, int idTarget, string text)
-        //{
-          
-        //    IdAgent = idAgent;
-        //    IdTarget = idTarget;
-        //    Text = text;
-        //    TimeStamp = DateTime.Now;
-        //}
+       
 
     }
 }

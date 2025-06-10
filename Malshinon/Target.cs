@@ -10,14 +10,16 @@ namespace Malshinon
     {
         public int Id { get; set; }
         public string FullName { get; set; }
-        public int NumberOfReports { get; set; }
+        public int NumberOfReports { get; set; } = 0;
         public bool IsDangerous { get; set; }
 
-        //public Target(string fullName, int numberOfReports, bool isDangerous)
-        //{
-        //    FullName = fullName;
-        //    NumberOfReports = numberOfReports;
-        //    IsDangerous = isDangerous;
-        //}
+ 
+        public void DisplayInfo()
+        {
+            Console.WriteLine($"full name: {FullName} |" +
+                              $" number of reports {NumberOfReports} |" +
+                              $" is dangerous: {IsDangerous}");
+        }
+      
     }
 }

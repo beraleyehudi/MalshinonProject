@@ -8,20 +8,14 @@ namespace Malshinon
 {
     public class Alert
     {
+        
         public Target Target { get; set; }
         public int Id { get; set; }
         public int IdTarget { get; set; }
         public float TimeWindow { get; set; }
         public string Reason { get; set; }
 
-        public DateTime TimeStamp { get; set; }
+        public DateTime TimeStamp { get; set; } = DateTime.Now;
 
-        //public Alert(int idtarget, float timeWindow, string reason)
-        //{
-        //    IdTarget = idtarget;
-        //    TimeWindow = timeWindow;
-        //    Reason = reason;
-        //    TimeStamp = DateTime.Now;
-        //}
     }
 }
