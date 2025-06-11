@@ -12,7 +12,9 @@ namespace Malshinon
         public int Id { get; set; }
         public string FullName { get; set; }
 
-        public int NumberOfReports { get; set; } = 0;
+        public int NumberOfReports { get; set; }
+
+        public float wordsAverage { get; set; }
 
         public Agent(string fullName)
         {

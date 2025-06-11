@@ -32,5 +32,18 @@ namespace Malshinon.Queries
             MalshinonDAL.Update(query);
         }
 
+        public static void UpdateWordsAverage(Agent agent, int wordsNumber)
+        {
+
+            string query = $"UPDATE agents SET wordsAverage = wordsAverage + {wordsNumber}/numberOfReports WHERE id = {agent.Id}";
+            MalshinonDAL.Update(query);
+        }
+
+        public static void UpdateagentStatus(Agent agent)
+        {
+
+            string query = $"UPDATE agents SET ispotenTial = 1 WHERE id = {agent.Id}";
+            MalshinonDAL.Update(query);
+        }
     }
 }

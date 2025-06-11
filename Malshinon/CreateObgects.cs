@@ -17,9 +17,11 @@ namespace Malshinon
             report.IdAgent = agent.Id;
             report.IdTarget = target.Id;
             report.Text = AuxiliaryFunctions.Input("What is the report?");
+            report.WordsLength = AuxiliaryFunctions.WordsLength(report.Text);
             Add.AddReport(report);
             Update.UpdateNumberReportsBySpecificTarget(target);
             Update.UpdateNumberReportsBySpecificAgent(report.Agent);
+            Update.UpdateWordsAverage(agent, report.WordsLength);
 
             
         }
@@ -27,8 +29,8 @@ namespace Malshinon
         {
             Target target = new Target();
             target.FullName = AuxiliaryFunctions.Input("Enter name of target");
-            target.Id = AuxiliaryFunctions.Input("enter his id");
-            Add.AddTarget(target);
+            target.Id = int.Parse(AuxiliaryFunctions.Input("Enter his id"));
+            
 
             return target;
         }

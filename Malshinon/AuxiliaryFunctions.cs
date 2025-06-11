@@ -61,5 +61,10 @@ namespace Malshinon
             Console.WriteLine("מסוכןןןןן");
         }
 
+        public static int WordsLength(string str)
+        {
+            return str.Split().Length;
+        }
+
     }
 }

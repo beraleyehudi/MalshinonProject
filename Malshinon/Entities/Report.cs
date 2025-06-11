@@ -14,6 +14,9 @@ namespace Malshinon
         public int IdAgent { get; set; }
         public int IdTarget { get; set; }
         public string Text { get; set; }
+        public int WordsLength { get; set; }
+
+
         public DateTime TimeStamp { get; set; } 
 
 

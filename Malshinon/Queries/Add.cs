@@ -17,6 +17,7 @@ namespace Malshinon.Queries
             Dictionary<string, string> parameters = new Dictionary<string, string>();
             parameters.Add("fullName", agent.FullName);
             parameters.Add("numberOfReports", agent.NumberOfReports.ToString());
+            parameters.Add("wordsAverage", agent.wordsAverage.ToString());
             MalshinonDAL.Add(table, parameters);
             // עכשווי רק כדי לקשר בין האיי די
             Agent[] agents = Get.GetAgents();
@@ -28,13 +29,10 @@ namespace Malshinon.Queries
         {
             string table = "targets";
             Dictionary<string, string> parameters = new Dictionary<string, string>();
+            parameters.Add("id", target.Id.ToString());
             parameters.Add("fullName", target.FullName);
-            parameters.Add("numberOfReports", target.NumberOfReports.ToString());
             MalshinonDAL.Add(table, parameters);
-            // עכשווי רק כדי לקשר בין האיי די
-            Target[] targets = Get.GetTargets();
-            target.Id = targets[targets.Length - 1].Id;
-
+          
 
         }
 
@@ -45,6 +43,7 @@ namespace Malshinon.Queries
             parameters.Add("idAgent", report.IdAgent.ToString());
             parameters.Add("idTarget", report.IdTarget.ToString());
             parameters.Add("text", report.Text);
+            parameters.Add("wordsLength", report.WordsLength.ToString());
             MalshinonDAL.Add(table, parameters);
 
         }

@@ -33,13 +33,26 @@ namespace Malshinon
                     target = CreateObgects.NewTarget(); 
                     break;
             }
-            
-            CreateObgects.NewReport(agent, target);
-            if (MalshinonDAL.IsDangerous(target) && !MalshinonDAL.IsExsist("alerts", target.Id))
+            if (MalshinonDAL.IsExsist("targets", target.Id))
             {
-                CreateObgects.NewAlert(target);
+                Console.WriteLine("exsist");
+                if (MalshinonDAL.IsDangerous(target) && !MalshinonDAL.IsExsist("alerts", target.Id))
+                {
+                    CreateObgects.NewAlert(target);
 
+                }
             }
+            else
+            {
+                Add.AddTarget(target);
+            }
+            CreateObgects.NewReport(agent, target);
+            if (MalshinonDAL.IsPotenTial(agent))
+            {
+                Console.WriteLine("potential");
+                Update.UpdateagentStatus(agent);
+            }
+
 
         }
 

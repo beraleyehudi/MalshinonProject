@@ -11,8 +11,9 @@ namespace Malshinon
     {
         static void Main(string[] args)
         {
-            Agent agent = new Agent("baruch levi");
-
+            Agent agent = new Agent("berale2");
+            agent.wordsAverage = 9.9f;
+            agent.NumberOfReports = 13;
 
 
             Add.AddAgent(agent);
