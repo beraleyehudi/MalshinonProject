@@ -46,7 +46,7 @@ namespace Malshinon
             {
                 Add.AddTarget(target);
             }
-            CreateObgects.NewReport(agent, target);
+            CreateObgects.NewReport(agent.Id, target.Id);
             if (MalshinonDAL.IsPotenTial(agent))
             {
                 Console.WriteLine("potential");

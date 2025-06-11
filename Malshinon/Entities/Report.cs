@@ -8,12 +8,13 @@ namespace Malshinon
 {
     public class Report
     {
-        public Agent Agent { get; set; }
-        public Target Target { get; set; }
+        //public Agent Agent { get; set; }
+        //public Target Target { get; set; }
         public int Id { get; set; }
         public int IdAgent { get; set; }
         public int IdTarget { get; set; }
         public string Text { get; set; }
+
         public int WordsLength { get; set; }
 
 

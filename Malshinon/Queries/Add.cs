@@ -18,6 +18,7 @@ namespace Malshinon.Queries
             parameters.Add("fullName", agent.FullName);
             parameters.Add("numberOfReports", agent.NumberOfReports.ToString());
             parameters.Add("wordsAverage", agent.wordsAverage.ToString());
+            parameters.Add("id", agent.Id.ToString());
             MalshinonDAL.Add(table, parameters);
             // עכשווי רק כדי לקשר בין האיי די
             Agent[] agents = Get.GetAgents();
@@ -58,9 +59,9 @@ namespace Malshinon.Queries
 
         }
 
-
-
-
-
     }
 }
+
+
+
+
