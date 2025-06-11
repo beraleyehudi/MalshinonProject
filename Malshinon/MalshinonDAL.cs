@@ -30,18 +30,20 @@ namespace Malshinon
         {
             MySqlConnection conn = new MySqlConnection(stringConnection);
             conn.Open();
-            string query = $"SELECT isDangerous, numberOfReports FROM targets WHERE id = {target.Id}";
+            string query = $"SELECT isDangerous, numberOfreports FROM targets WHERE id = {target.Id}";
             MySqlCommand cmd = new MySqlCommand(query, conn);
             MySqlDataReader reader = cmd.ExecuteReader();
             reader.Read();
-            int reportsNumber = reader.GetInt16("numberOfReports");
-            return reader.GetBoolean("isDangerous") || reportsNumber >= 20;
+            try
+            {
+                int reportsNumber = reader.GetInt16("numberOfreports");
+                return reader.GetBoolean("isDangerous") || reportsNumber >= 20;
+            }
+            catch
+            {
+                return false;
+            }
         }
-
-        //public static void AddGeneral(string table, string[] parameters, string[] values )
-        //{
-
-        //}
 
         public static void Add(string table, Dictionary<string, string> parameters)
         {
@@ -70,60 +72,31 @@ namespace Malshinon
             conn.Close();
         }
 
-        public static void UpdateNumberReportsBySpecificTarget(Target target)
+        public static void Update(string query)
         {
             MySqlConnection conn = new MySqlConnection (stringConnection);
             conn.Open();
-            string query = $"UPDATE targets SET numberOfreports = numberOfreports + 1 WHERE id = {target.Id}";
             MySqlCommand cmd = new MySqlCommand(query, conn);
             cmd.ExecuteNonQuery();
             conn.Close();
         }
 
-        public static void UpdateNumberReportsBySpecificAgent(Agent agent)
+       
+       
+        public static MySqlDataReader Get(string query)
         {
+            
             MySqlConnection conn = new MySqlConnection(stringConnection);
             conn.Open();
-            string query = $"UPDATE agents SET numberOfreports = numberOfreports + 1 WHERE id = {agent.Id}";
-            MySqlCommand cmd = new MySqlCommand(query, conn);
-            cmd.ExecuteNonQuery();
-            conn.Close();
-        }
-
-        public static void UpdateTargetStatus(Target target)
-        {
-            MySqlConnection conn = new MySqlConnection (stringConnection);
-            conn.Open();
-            string query = $"UPDATE targets SET isDangerous = 1 WHERE id = {target.Id}";
-            MySqlCommand cmd = new MySqlCommand (query, conn);
-            cmd.ExecuteNonQuery();
-            conn.Close();
-        }
-
-        public static Target[] GetTargets()
-        {
-            List<Target> targests = new List<Target>();
-            MySqlConnection conn = new MySqlConnection(stringConnection);
-            conn.Open();
-            string query = "SELECT * FROM targets";
             MySqlCommand cmd = new MySqlCommand(query, conn);
             MySqlDataReader reader = cmd.ExecuteReader();
 
-            while (reader.Read())
-            {
-                Target target = new Target();
-                target.Id = reader.GetInt32("id");
-                target.FullName = reader.GetString("fullName");
-                target.NumberOfReports = reader.GetInt16("numberOfreports");
-                target.IsDangerous = reader.GetBoolean("isDangerous");
-                targests.Add(target);
-            }
-            reader.Close();
-            conn.Close();
-            return targests.ToArray();
+            
+           
+            return reader;
 
         }
-            
+
     }
 }
 

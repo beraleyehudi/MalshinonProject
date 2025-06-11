@@ -18,7 +18,7 @@ namespace Malshinon
         {
 
             FullName = fullName;
-            //MalshinonDAL.AddAgent(this);
+            
         }
     }
 }
