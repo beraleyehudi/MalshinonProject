@@ -15,7 +15,7 @@ namespace Malshinon
         public float TimeWindow { get; set; }
         public string Reason { get; set; }
 
-        public DateTime TimeStamp { get; set; } = DateTime.Now;
+        public DateTime TimeStamp { get; set; }
 
     }
 }

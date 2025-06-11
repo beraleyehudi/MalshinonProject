@@ -13,6 +13,7 @@ namespace Malshinon.Queries
         public static void UpdateNumberReportsBySpecificTarget(Target target)
         {
            string query = $"UPDATE targets SET numberOfreports = numberOfreports + 1 WHERE id = {target.Id}";
+           MalshinonDAL.Update(query);
         }
            
             
@@ -21,14 +22,14 @@ namespace Malshinon.Queries
         {
            
             string query = $"UPDATE agents SET numberOfreports = numberOfreports + 1 WHERE id = {agent.Id}";
-          
+            MalshinonDAL.Update(query);
         }
 
         public static void UpdateTargetStatus(Target target)
         {
            
             string query = $"UPDATE targets SET isDangerous = 1 WHERE id = {target.Id}";
-           
+            MalshinonDAL.Update(query);
         }
 
     }

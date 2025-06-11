@@ -11,16 +11,17 @@ namespace Malshinon
     {
         static void Main(string[] args)
         {
-            Agent agent = new Agent("yehuda levi");
-
-            
-
-            //Add.AddAgent(agent);
+            Agent agent = new Agent("baruch levi");
 
 
-            //Logic.AddReport(agent);
+
+            Add.AddAgent(agent);
 
 
+            Logic.AddReport(agent);
         }
     }
 }
+
+           
+

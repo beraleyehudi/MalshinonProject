@@ -18,7 +18,7 @@ namespace Malshinon
             switch(choice)
             {
                 case "chioce specific target":
-                    Target[] targets = MalshinonDAL.GetTargets();
+                    Target[] targets = Get.GetTargets();
                     for (int i = 0; i < targets.Length; i++)
                     {
                         Console.Write($"{i + 1}: ");
@@ -34,10 +34,7 @@ namespace Malshinon
                     break;
             }
             
-            Report report = CreateObgects.NewReport(agent, target);
-            Add.AddReport(report);
-            MalshinonDAL.UpdateNumberReportsBySpecificTarget(target);
-            MalshinonDAL.UpdateNumberReportsBySpecificAgent(report.Agent);
+            CreateObgects.NewReport(agent, target);
             if (MalshinonDAL.IsDangerous(target) && !MalshinonDAL.IsExsist("alerts", target.Id))
             {
                 CreateObgects.NewAlert(target);
