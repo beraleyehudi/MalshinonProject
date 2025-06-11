@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Asn1.X509;
 
 namespace Malshinon
 {
@@ -24,6 +25,27 @@ namespace Malshinon
             
             return cmd.ExecuteScalar() != null;
             
+        }
+
+        public static bool IsPotenTial(Agent agent)
+        {
+            MySqlConnection conn = new MySqlConnection(stringConnection);
+            conn.Open();
+            string query = $"SELECT wordsAverage, numberOfReports FROM agents WHERE id = {agent.Id}";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            MySqlDataReader reader = cmd.ExecuteReader();
+            reader.Read();
+            try
+            {
+                int numberOfReports = reader.GetInt16("numberOfReports");
+                float wordsAverage = reader.GetFloat("wordsAverage");
+                return wordsAverage >= 100 && numberOfReports >= 10;
+            }
+            catch
+            {
+                return false;
+            }
+
         }
 
         public static bool IsDangerous(Target target)

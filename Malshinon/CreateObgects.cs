@@ -9,17 +9,19 @@ namespace Malshinon
 {
     public static class CreateObgects
     {
-        public static void NewReport(Agent agent, Target target)
+        public static void NewReport(int idAgent, int idTarget)
         {
             Report report = new Report();
-            report.Agent = agent;
-            report.Target = target;
-            report.IdAgent = agent.Id;
-            report.IdTarget = target.Id;
+            //report.Agent = agent;
+            //report.Target = target;
+            report.IdAgent = idAgent;
+            report.IdTarget = idTarget;
             report.Text = AuxiliaryFunctions.Input("What is the report?");
+            report.WordsLength = AuxiliaryFunctions.WordsLength(report.Text);
             Add.AddReport(report);
-            Update.UpdateNumberReportsBySpecificTarget(target);
-            Update.UpdateNumberReportsBySpecificAgent(report.Agent);
+            Update.UpdateNumberReportsBySpecificTarget(idTarget);
+            Update.UpdateNumberReportsBySpecificAgent(idAgent);
+            Update.UpdateWordsAverage(idAgent, report.WordsLength);
 
             
         }
@@ -27,8 +29,8 @@ namespace Malshinon
         {
             Target target = new Target();
             target.FullName = AuxiliaryFunctions.Input("Enter name of target");
-            target.Id = AuxiliaryFunctions.Input("enter his id");
-            Add.AddTarget(target);
+            target.Id = int.Parse(AuxiliaryFunctions.Input("Enter his id"));
+            
 
             return target;
         }

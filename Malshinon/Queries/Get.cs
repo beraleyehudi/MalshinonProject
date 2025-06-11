@@ -45,6 +45,43 @@ namespace Malshinon.Queries
             reader.Close();
             return agents.ToArray();
         }
+
+        public static Report[] GetReports()
+        {
+            List<Report> reports = new List<Report>();
+            string query = "SELECT * FROM reports";
+            MySqlDataReader reader = MalshinonDAL.Get(query);
+
+            while (reader.Read())
+            {
+                Report report = new Report();
+                report.IdAgent = reader.GetInt32("idAgent");
+                report.IdTarget = reader.GetInt16("idTarget");
+                report.Text = reader.GetString("text");
+                reports.Add(report);
+            }
+            reader.Close();
+            return reports.ToArray();
+
+        }
+
+        //public static Report[] GetReports(string query)
+        //{
+        //    List<Report> reports = new List<Report>();
+        //    MySqlDataReader reader = MalshinonDAL.Get(query);
+
+        //    while (reader.Read())
+        //    {
+        //        Report report = new Report();
+        //        report.IdAgent = reader.GetInt32("idAgent");
+        //        report.IdTarget = reader.GetInt16("idTarget");
+        //        report.Text = reader.GetString("text");
+        //        reports.Add(report);
+        //    }
+        //    reader.Close();
+        //    return reports.ToArray();
+
+        //}
     }
 }
             
