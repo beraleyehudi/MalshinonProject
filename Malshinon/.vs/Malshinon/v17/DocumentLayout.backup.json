@@ -3,48 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\createobgects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:createobgects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|c:\\users\\user\\desktop\\malshinonproject\\malshinon\\queries\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\queries\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:queries\\update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\queries\\add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:queries\\add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\entities\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:entities\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\queries\\get.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:queries\\get.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\auxiliaryfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:auxiliaryfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\entities\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:entities\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\entities\\agent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:entities\\agent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\createobgects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:createobgects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\malshinondal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:malshinondal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\auxiliaryfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:auxiliaryfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\queries\\add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:queries\\add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\entities\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:entities\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|c:\\users\\user\\desktop\\malshinonproject\\malshinon\\queries\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:queries\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|c:\\users\\user\\desktop\\malshinonproject\\malshinon\\entities\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:entities\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\entities\\agent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|solutionrelative:entities\\agent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DAD8EC8-8735-40FB-AC96-B85CE05EC82C}|Malshinon.csproj|C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\entities\\alert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,28 +74,131 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Entities\\Report.cs",
+              "RelativeDocumentMoniker": "Entities\\Report.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Entities\\Report.cs",
+              "RelativeToolTip": "Entities\\Report.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T06:01:47.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Agent.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Entities\\Agent.cs",
+              "RelativeDocumentMoniker": "Entities\\Agent.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Entities\\Agent.cs",
+              "RelativeToolTip": "Entities\\Agent.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T06:02:07.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Add.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Queries\\Add.cs",
+              "RelativeDocumentMoniker": "Queries\\Add.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Queries\\Add.cs",
+              "RelativeToolTip": "Queries\\Add.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwBQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T14:11:24.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Get.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Queries\\Get.cs",
+              "RelativeDocumentMoniker": "Queries\\Get.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Queries\\Get.cs",
+              "RelativeToolTip": "Queries\\Get.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAcwGgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T14:21:03.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Target.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Entities\\Target.cs",
+              "RelativeDocumentMoniker": "Entities\\Target.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Entities\\Target.cs",
+              "RelativeToolTip": "Entities\\Target.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T06:02:22.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Logic.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Logic.cs",
+              "RelativeDocumentMoniker": "Logic.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Logic.cs",
+              "RelativeToolTip": "Logic.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwEQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T14:06:33.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateObgects.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\CreateObgects.cs",
+              "RelativeDocumentMoniker": "CreateObgects.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\CreateObgects.cs",
+              "RelativeToolTip": "CreateObgects.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T17:24:52.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuxiliaryFunctions.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\AuxiliaryFunctions.cs",
+              "RelativeDocumentMoniker": "AuxiliaryFunctions.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\AuxiliaryFunctions.cs",
+              "RelativeToolTip": "AuxiliaryFunctions.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAA0wEoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T18:03:48.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Update.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Queries\\Update.cs",
               "RelativeDocumentMoniker": "Queries\\Update.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Queries\\Update.cs*",
-              "RelativeToolTip": "Queries\\Update.cs*",
-              "ViewState": "AgIAABsAAAAAAAAAAAA1wC4AAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Queries\\Update.cs",
+              "RelativeToolTip": "Queries\\Update.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T14:07:13.877Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateObgects.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\CreateObgects.cs",
-              "RelativeDocumentMoniker": "CreateObgects.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\CreateObgects.cs*",
-              "RelativeToolTip": "CreateObgects.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBoAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "MalshinonDAL.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\MalshinonDAL.cs",
+              "RelativeDocumentMoniker": "MalshinonDAL.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\MalshinonDAL.cs",
+              "RelativeToolTip": "MalshinonDAL.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAhwHIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T17:24:52.986Z",
+              "WhenOpened": "2025-06-09T07:33:33.266Z",
               "EditorCaption": ""
             },
             {
@@ -102,7 +209,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-09T05:32:39.469Z",
               "EditorCaption": ""
@@ -110,108 +217,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "MalshinonDAL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\MalshinonDAL.cs",
-              "RelativeDocumentMoniker": "MalshinonDAL.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\MalshinonDAL.cs",
-              "RelativeToolTip": "MalshinonDAL.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAzAAAAAAAAAA==",
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Queries\\Class1.cs",
+              "RelativeDocumentMoniker": "Queries\\Class1.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Queries\\Class1.cs",
+              "RelativeToolTip": "Queries\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T07:33:33.266Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Report.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Entities\\Report.cs",
-              "RelativeDocumentMoniker": "Entities\\Report.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Entities\\Report.cs",
-              "RelativeToolTip": "Entities\\Report.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T06:01:47.711Z",
+              "WhenOpened": "2025-06-12T09:15:01.998Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Agent.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Entities\\Agent.cs",
-              "RelativeDocumentMoniker": "Entities\\Agent.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Entities\\Agent.cs",
-              "RelativeToolTip": "Entities\\Agent.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T06:02:07.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Add.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Queries\\Add.cs",
-              "RelativeDocumentMoniker": "Queries\\Add.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Queries\\Add.cs",
-              "RelativeToolTip": "Queries\\Add.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwBQAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T14:11:24.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Get.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Queries\\Get.cs",
-              "RelativeDocumentMoniker": "Queries\\Get.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Queries\\Get.cs*",
-              "RelativeToolTip": "Queries\\Get.cs*",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowDwAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T14:21:03.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Logic.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Logic.cs",
-              "RelativeDocumentMoniker": "Logic.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Logic.cs*",
-              "RelativeToolTip": "Logic.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T14:06:33.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AuxiliaryFunctions.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\AuxiliaryFunctions.cs",
-              "RelativeDocumentMoniker": "AuxiliaryFunctions.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\AuxiliaryFunctions.cs",
-              "RelativeToolTip": "AuxiliaryFunctions.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAIwDkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T18:03:48.205Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Target.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Entities\\Target.cs",
-              "RelativeDocumentMoniker": "Entities\\Target.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Entities\\Target.cs",
-              "RelativeToolTip": "Entities\\Target.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T06:02:22.401Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Alert.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Entities\\Alert.cs",
               "RelativeDocumentMoniker": "Entities\\Alert.cs",
@@ -223,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Enums.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\MalshinonProject\\Malshinon\\Enums.cs",
               "RelativeDocumentMoniker": "Enums.cs",

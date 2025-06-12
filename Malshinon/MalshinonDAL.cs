@@ -16,11 +16,11 @@ namespace Malshinon
             "database=malshinon;" +
             "port=3306;";
 
-        public static bool IsExsist(string tablt, int id)
+        public static bool IsExsist(string tablt, string condition ,int id)
         {
             MySqlConnection conn = new MySqlConnection(stringConnection);
             conn.Open();
-            string query = $"SELECT * FROM {tablt} WHERE id = {id}";
+            string query = $"SELECT * FROM {tablt} WHERE {condition} = {id}";
             MySqlCommand cmd = new MySqlCommand(query, conn);
             
             return cmd.ExecuteScalar() != null;
@@ -111,7 +111,9 @@ namespace Malshinon
             MySqlConnection conn = new MySqlConnection(stringConnection);
             conn.Open();
             MySqlCommand cmd = new MySqlCommand(query, conn);
+           
             MySqlDataReader reader = cmd.ExecuteReader();
+   
 
             
            

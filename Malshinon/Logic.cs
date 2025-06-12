@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Management.Instrumentation;
 using System.Text;
 using System.Threading.Tasks;
 using Malshinon.Queries;
@@ -18,25 +19,42 @@ namespace Malshinon
             switch(choice)
             {
                 case "chioce specific target":
-                    Target[] targets = Get.GetTargets();
-                    for (int i = 0; i < targets.Length; i++)
-                    {
-                        Console.Write($"{i + 1}: ");
-                        targets[i].DisplayInfo();
+                    // the following condition is for 
+                    //Refinement of functionality - prevent the agent from 
+                    //accessing reports that do not belong to him
 
-                    }
-                    int choice2 = int.Parse(AuxiliaryFunctions.Input("choice"));
-                    target = targets[choice2 - 1];
-                    break;
+                    //if (MalshinonDAL.IsExsist("reports", "idAgent" ,agent.Id))
+                    //{
+
+                        //Console.WriteLine("report by agent is exsist"); // for log
+                        //Target[] targets = Get.GetTargetsByAgent(agent.Id);
+
+                        Target[] targets = Get.GetTargets();
+                        for (int i = 0; i < targets.Length; i++)
+                        {
+                            Console.Write($"{i + 1}: ");
+                            targets[i].DisplayInfoForAgent();
+
+                        }
+                        int choice2 = int.Parse(AuxiliaryFunctions.Input("choice"));
+                        target = targets[choice2 - 1];
+                    //}
+                    //else
+                    //{
+                    //    Console.WriteLine("no target that exsist");
+                    //    target = CreateObgects.NewTarget();
+                    //}
+
+                        break;
 
                 case "add new target":
                     target = CreateObgects.NewTarget(); 
                     break;
             }
-            if (MalshinonDAL.IsExsist("targets", target.Id))
+            if (MalshinonDAL.IsExsist("targets", "id" ,target.Id))
             {
                 Console.WriteLine("exsist");
-                if (MalshinonDAL.IsDangerous(target) && !MalshinonDAL.IsExsist("alerts", target.Id))
+                if (MalshinonDAL.IsDangerous(target) && !MalshinonDAL.IsExsist("alerts", "idTarget", target.Id))
                 {
                     CreateObgects.NewAlert(target);
 
@@ -46,6 +64,12 @@ namespace Malshinon
             {
                 Add.AddTarget(target);
             }
+            if (AuxiliaryFunctions.TimeWindowCheck(Get.GetTimeWindow(target.Id)))
+            {
+                Update.UpdateTargetStatus(target.Id);
+            }
+
+            
             CreateObgects.NewReport(agent.Id, target.Id);
             if (MalshinonDAL.IsPotenTial(agent))
             {

@@ -12,8 +12,6 @@ namespace Malshinon
         public static void NewReport(int idAgent, int idTarget)
         {
             Report report = new Report();
-            //report.Agent = agent;
-            //report.Target = target;
             report.IdAgent = idAgent;
             report.IdTarget = idTarget;
             report.Text = AuxiliaryFunctions.Input("What is the report?");
