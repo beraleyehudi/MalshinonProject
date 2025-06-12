@@ -66,9 +66,9 @@ namespace Malshinon
             return str.Split().Length;
         }
 
-        public static bool TimeWindowCheck(DateTime dataTime)
+        public static bool TimeWindowCheck(DateTime dataTimeStart, DateTime dataTimeEnd)
         {
-            var timeDifference = DateTime.UtcNow - dataTime.ToUniversalTime();
+            var timeDifference = dataTimeStart - dataTimeEnd;
             return timeDifference.TotalMinutes <= 15;
         }
 

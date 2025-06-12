@@ -32,14 +32,14 @@ namespace Malshinon
 
             return target;
         }
-        public static Alert NewAlert(Target target)
+        public static Alert NewAlert(Target target, string timeWindow)
         {
 
             AuxiliaryFunctions.AlertMessage();
             Alert alert = new Alert();
             alert.Target = target;
             alert.IdTarget = target.Id;
-            //alert.Reason = Input("Enter a reason");
+            alert.Reason = timeWindow;
             Add.AddAlert(alert);
             return new Alert();
         }

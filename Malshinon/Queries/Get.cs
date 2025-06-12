@@ -92,18 +92,18 @@ namespace Malshinon.Queries
 
         }
 
-        public static DateTime GetTimeWindow(int idTarget)
+        public static DateTime[] GetTimeWindow(int idTarget)
         {
             List<DateTime> dateTimes = new List<DateTime>();
             string query = "SELECT timeStamp FROM `reports`" +
                 $"WHERE idTarget = {idTarget} " +
-                "ORDER BY timeStamp DESC LIMIT 2";
+                "ORDER BY timeStamp DESC LIMIT 3";
             MySqlDataReader reader = MalshinonDAL.Get(query);
             while (reader.Read())
             {
                 dateTimes.Add(reader.GetDateTime("timeStamp"));
             }
-            return dateTimes[1];
+            return dateTimes.ToArray();
         }
 
 

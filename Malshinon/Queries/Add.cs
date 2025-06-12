@@ -52,9 +52,10 @@ namespace Malshinon.Queries
         public static void AddAlert(Alert alert)
         {
 
-            string table = "agents";
+            string table = "alerts";
             Dictionary<string, string> parameters = new Dictionary<string, string>();
             parameters.Add("idTarget", alert.IdTarget.ToString());
+            parameters.Add("reason", alert.Reason);
             MalshinonDAL.Add(table, parameters);
 
         }

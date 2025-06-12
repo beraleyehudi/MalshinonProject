@@ -13,18 +13,22 @@ namespace Malshinon
         public static void AddReport(Agent agent)
         {
             string[] options = {"chioce specific target", "add new target" };
+            string exit = "";
+            do
+            {
             string choice = AuxiliaryFunctions.PrintMenu("add report", options);
             Target target = null;
 
-            switch(choice)
-            {
-                case "chioce specific target":
-                    // the following condition is for 
-                    //Refinement of functionality - prevent the agent from 
-                    //accessing reports that do not belong to him
 
-                    //if (MalshinonDAL.IsExsist("reports", "idAgent" ,agent.Id))
-                    //{
+                switch (choice)
+                {
+                    case "chioce specific target":
+                        // the following condition is for 
+                        //Refinement of functionality - prevent the agent from 
+                        //accessing reports that do not belong to him
+
+                        //if (MalshinonDAL.IsExsist("reports", "idAgent" ,agent.Id))
+                        //{
 
                         //Console.WriteLine("report by agent is exsist"); // for log
                         //Target[] targets = Get.GetTargetsByAgent(agent.Id);
@@ -38,44 +42,54 @@ namespace Malshinon
                         }
                         int choice2 = int.Parse(AuxiliaryFunctions.Input("choice"));
                         target = targets[choice2 - 1];
-                    //}
-                    //else
-                    //{
-                    //    Console.WriteLine("no target that exsist");
-                    //    target = CreateObgects.NewTarget();
-                    //}
+                        //}
+                        //else
+                        //{
+                        //    Console.WriteLine("no target that exsist");
+                        //    target = CreateObgects.NewTarget();
+                        //}
 
                         break;
 
-                case "add new target":
-                    target = CreateObgects.NewTarget(); 
-                    break;
-            }
-            if (MalshinonDAL.IsExsist("targets", "id" ,target.Id))
-            {
-                Console.WriteLine("exsist");
-                if (MalshinonDAL.IsDangerous(target) && !MalshinonDAL.IsExsist("alerts", "idTarget", target.Id))
+                    case "add new target":
+                        target = CreateObgects.NewTarget();
+                        break;
+                }
+                if (MalshinonDAL.IsExsist("targets", "id", target.Id))
                 {
-                    CreateObgects.NewAlert(target);
+                    Console.WriteLine("exsist");
+                    //if (MalshinonDAL.IsDangerous(target) && !MalshinonDAL.IsExsist("alerts", "idTarget", target.Id))
+                    //{
+                    //    CreateObgects.NewAlert(target);
+
+                    //}
+                }
+                else
+                {
+                    Add.AddTarget(target);
+                }
+
+
+                CreateObgects.NewReport(agent.Id, target.Id);
+                DateTime[] timeWindow = Get.GetTimeWindow(target.Id);
+                if (timeWindow.Length == 3)
+                {
+                    if (AuxiliaryFunctions.TimeWindowCheck(timeWindow[2], timeWindow[0]))
+                    {
+                        Update.UpdateTargetStatus(target.Id);
+                        CreateObgects.NewAlert(target, $"{timeWindow[2].ToString()} - {timeWindow[0].ToString()}");
+                    }
 
                 }
-            }
-            else
-            {
-                Add.AddTarget(target);
-            }
-            if (AuxiliaryFunctions.TimeWindowCheck(Get.GetTimeWindow(target.Id)))
-            {
-                Update.UpdateTargetStatus(target.Id);
-            }
+                if (MalshinonDAL.IsPotenTial(agent))
+                {
+                    Console.WriteLine("potential");
+                    Update.UpdateagentStatus(agent);
+                }
 
-            
-            CreateObgects.NewReport(agent.Id, target.Id);
-            if (MalshinonDAL.IsPotenTial(agent))
-            {
-                Console.WriteLine("potential");
-                Update.UpdateagentStatus(agent);
-            }
+                exit = AuxiliaryFunctions.Input("enter * if you want exit");
+
+            } while (exit != "*");
 
 
         }
