@@ -19,10 +19,14 @@ namespace Malshinon
             agent.Id = 212319164;
 
 
-            if (!MalshinonDAL.IsExsist("agents", agent.Id))
+            if (!MalshinonDAL.IsExsist("agents", "id" ,agent.Id))
             {
 
-            Add.AddAgent(agent);
+                Add.AddAgent(agent);
+            }
+            else
+            {
+                Console.WriteLine("is exsist");
             }
 
 

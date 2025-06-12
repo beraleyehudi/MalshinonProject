@@ -29,6 +29,29 @@ namespace Malshinon.Queries
             return targests.ToArray();
         }
 
+        public static Target[] GetTargetsByAgent(int Idagent)
+        {
+            List<Target> targests = new List<Target>();
+            string query = "SELECT DISTINCT t.fullName, t.id" +
+                "FROM targets t" +
+                "INNER JOIN reports r ON t.id = r.idTarget" +
+                "INNER JOIN agents a ON a.id = r.idAgent" +
+                $"WHERE a.id = {Idagent}";
+               
+           
+            MySqlDataReader reader = MalshinonDAL.Get(query);
+
+            while (reader.Read())
+            {
+                Target target = new Target();
+                target.Id = reader.GetInt32("id");
+                target.FullName = reader.GetString("fullName");
+                targests.Add(target);
+            }
+            reader.Close();
+            return targests.ToArray();
+        }
+
         public static Agent[] GetAgents()
         {
             List<Agent> agents = new List<Agent>();
@@ -45,6 +68,10 @@ namespace Malshinon.Queries
             reader.Close();
             return agents.ToArray();
         }
+
+
+
+
 
         public static Report[] GetReports()
         {
@@ -65,23 +92,21 @@ namespace Malshinon.Queries
 
         }
 
-        //public static Report[] GetReports(string query)
-        //{
-        //    List<Report> reports = new List<Report>();
-        //    MySqlDataReader reader = MalshinonDAL.Get(query);
+        public static DateTime GetTimeWindow(int idTarget)
+        {
+            List<DateTime> dateTimes = new List<DateTime>();
+            string query = "SELECT timeStamp FROM `reports`" +
+                $"WHERE idTarget = {idTarget} " +
+                "ORDER BY timeStamp DESC LIMIT 2";
+            MySqlDataReader reader = MalshinonDAL.Get(query);
+            while (reader.Read())
+            {
+                dateTimes.Add(reader.GetDateTime("timeStamp"));
+            }
+            return dateTimes[1];
+        }
 
-        //    while (reader.Read())
-        //    {
-        //        Report report = new Report();
-        //        report.IdAgent = reader.GetInt32("idAgent");
-        //        report.IdTarget = reader.GetInt16("idTarget");
-        //        report.Text = reader.GetString("text");
-        //        reports.Add(report);
-        //    }
-        //    reader.Close();
-        //    return reports.ToArray();
 
-        //}
     }
 }
             

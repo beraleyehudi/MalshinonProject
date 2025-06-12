@@ -20,6 +20,11 @@ namespace Malshinon
                               $" number of reports {NumberOfReports} |" +
                               $" is dangerous: {IsDangerous}");
         }
+
+        public void DisplayInfoForAgent()
+        {
+            Console.WriteLine($"ID: {Id} | fuul name: {FullName}");
+        }
       
     }
 }
